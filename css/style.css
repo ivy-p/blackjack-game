@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    background-color: goldenrod;
+}
+
+h1 {
+    color: goldenrod;
+    margin: 50px auto;
+    font-size: 3rem;
+    font-family: 'Nabla', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    opacity: 0.8;
+    padding: 15px;
+    border-radius: 90px;
+    width: 85%;
+    -webkit-box-reflect: below -15px linear-gradient(transparent, rgba(0,0,0,.2));
+    cursor: pointer;
+}
+
+h1:hover {
+
+}
+
+.text-container{
+    display: flex;
+    flex-flow: column;
+    margin: 75px auto 20px auto;
+    padding: 10px;
+    background-color: #0C6C3E;
+    border-radius: 30px;
+    opacity: 0.9;
+    width: 68%;
+    border:10px black inset;
+}
+
+.message-el {
+    font-size: 1.75rem;
+    font-style: italic;
+}
+
+.cards,
+.sum {
+    font-size: 1.25rem;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+}
+
+.hide {
+    display: none;
+}
+
+button {
+    background-color: black;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #0C6C3E;
+}
+
+button:active {
+    background-color: #063d22;
+}
+
+button:active::after {
+    background-color: black;
+}
+/* ^^ NEED TO FIGURE OUT WHY THE GREEN BACKGROUND IS STICKING WHEN BUTTONS ARE PRESSED*/
+
+/*TABLET STYLES*/
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+        margin-top: 75px;
+        width: 60%;
+    }
+
+    .text-container {
+        width: 80%;
+        padding: 40px;
+    }
+
+    .message-el{
+        font-size: 2.5rem;
+    }
+
+    .cards,
+    .sum {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 3rem;
+        padding: 20px;
+    }
+}
+
+.player-el {
+    color: black;
+    font-size: 1.125rem;
+}
+/*DESKTOP STYLES*/
+@media only screen and (min-width: 1200px) {
+    h1 {
+        width: 30%;
+        font-size: 3rem;
+    }
+    
+    .text-container {
+        width: 40%;
+    }
+
+    .message-el,
+    .cards,
+    .sum {
+        font-size: 1.75rem;
+    }
+
+    .button-container {
+        flex-flow: row;
+        justify-content: space-around;
+    }
+
+    button {
+        font-size: 2rem;
+    }
+
+
+}

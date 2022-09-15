@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Blackjack Game</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 onclick="window.location.reload()">
+            ♠️ Blackjack ♠️
+        </h1>
+        <div class="text-container">
+            <p class="message-el">Want to play a round?</p>
+            <p class="cards">Cards:</p>
+            <p class="sum">Sum:</p>
+        </div>
+
+        <div class="button-container">
+            <button class="new-card hide" onclick="newCard()">
+                New Card
+            </button>
+            <button class="start-game" onclick="startGame()">
+                Start Game
+            </button>
+        </div>
+        <p class="player-el"></p>
+        
+        <script src="js/script.js" defer></script>
+    </body>
+    
+</html>
