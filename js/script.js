@@ -1,11 +1,11 @@
 
 const player = {
-    name: prompt("Please enter your first name."),
+    // name: prompt("Please enter your first name."),
     chips: 145
 };
 
 let playerEl = document.querySelector(".player-el");
-playerEl.textContent = `${player.name}'s remaining chips: $${player.chips}`;
+playerEl.textContent = `Your remaining chips: $${player.chips}`;
 
 let cards = [];
 cardsEl = document.querySelector(".cards");
